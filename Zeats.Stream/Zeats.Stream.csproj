@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Zeats.Json\Zeats.Json.csproj" />
+    <PackageReference Include="Zeats.Json" Version="1.0.0.2" />
   </ItemGroup>
 
 </Project>
