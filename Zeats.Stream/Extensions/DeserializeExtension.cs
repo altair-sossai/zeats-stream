@@ -7,7 +7,7 @@ namespace Zeats.Stream.Extensions
     {
         public static async Task<T> Deserialize<T>(this System.IO.Stream stream)
         {
-            return await JsonParser.DeserializeAsync<T>(stream);
+            return await JsonSerializer.DeserializeAsync<T>(stream);
         }
     }
 }
