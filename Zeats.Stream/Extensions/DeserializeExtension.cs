@@ -1,12 +1,13 @@
 ﻿using System.Threading.Tasks;
 using Zeats.Json;
 
-namespace Zeats.Stream.Extensions;
-
-public static class DeserializeExtension
+namespace Zeats.Stream.Extensions
 {
-    public static async Task<T> Deserialize<T>(this System.IO.Stream stream)
+    public static class DeserializeExtension
     {
-        return await JsonSerializer.DeserializeAsync<T>(stream);
+        public static async Task<T> Deserialize<T>(this System.IO.Stream stream)
+        {
+            return await JsonSerializer.DeserializeAsync<T>(stream);
+        }
     }
 }
